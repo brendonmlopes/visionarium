@@ -1,8 +1,7 @@
 import Sidebar from "!/Sidebar"
 import Image from "next/image"
 
-export default function Yolo(props){
-	const p = props
+export default function Yolo(){
 	return(
 		<div className="flex">
 			<Sidebar />
