@@ -5,8 +5,8 @@ import {useState, useEffect} from "react"
 import {MoveLeft} from "lucide-react"
 
 export default function Sidebar() {
-	const router = useRouter();
-  let [collapsed, setCollapsed] = useState(true);
+  const router = useRouter();
+  const [collapsed, setCollapsed] = useState(true);
   const railWidth = collapsed ? "w-30" : "w-128";
   const contentWidth = collapsed ? "w-0" : "w-full";
   const hiddenIfCollapsed = collapsed ? "hidden" : "";
