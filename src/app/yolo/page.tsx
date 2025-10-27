@@ -6,9 +6,9 @@ export default function Yolo(){
 	return(
 		<div className="flex h-screen">
 			<Sidebar />
-			<div className="flex flex-col w-full bg-black">
+			<div className="dark-bg flex flex-col w-full bg-black">
 				<div className="flex flex-col justify-center items-center mx-auto">
-          <VideoFeed />
+				<VideoFeed />
 					<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded">
 						<label htmlFor="fileInput" className="flex px-5 py-2">Upload do Vídeo <Image alt="upload" className="ms-3 invert" src="/file.svg" width="20" height="20"></Image></label>
 					</button>

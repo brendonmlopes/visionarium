@@ -28,17 +28,17 @@ export default function Sidebar() {
   },[])
 
 	return(
-	<>
-    <div className={`py-10 ${railWidth} bg-red-800 ...`}>
-			<div className="h-screen px-10">
-        <div style={{filter:"drop-shadow(0px 0px 5px white)"}} className={`font-bold text-white px-5 ${hiddenIfCollapsed} text-6xl`}>Visionarium</div>
-				<hr style={{filter:"drop-shadow(0px 0px 5px white)"}}></hr>
-				<div className={`${buttonIfCollapsed}`}>
-					<button className={`bg-blue-500 hover:bg-blue-700 text-white font-bold my-5 py-2 ${collapsed?"px-2":"px-4"} rounded `} onClick={()=>{router.back()}}>{collapsed?"":"Voltar"}<MoveLeft /></button>
+<>
+    <div className={`py-10 ${railWidth} h-screen bg-red-800 ...`}>
+			<div className="px-10">
+				<div style={{filter:"drop-shadow(0px 0px 5px white)"}} className={`font-bold text-white px-5 ${hiddenIfCollapsed} text-6xl`}>Visionarium</div>
+					<hr style={{filter:"drop-shadow(0px 0px 5px white)"}}></hr>
+					<div className={`${buttonIfCollapsed}`}>
+						<button className={`bg-blue-500 hover:bg-blue-700 text-white font-bold my-5 py-2 ${collapsed?"px-2":"px-4"} rounded `} onClick={()=>{router.back()}}>{collapsed?"":"Voltar"}<MoveLeft /></button>
 				</div>
 			</div>
     </div>
-	</>
+</>
 	)
 }
 
