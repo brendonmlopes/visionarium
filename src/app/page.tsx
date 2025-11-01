@@ -1,6 +1,5 @@
 "use client"
 import Sidebar from "!/Sidebar"
-import {useState} from "react"
 
 export default function Home() {
 	return (
@@ -16,14 +15,14 @@ export default function Home() {
 					<div className="flex flex-col justify-center mx-1 my-2">
 						<button onClick={()=>{window.location.href="/engines/bodypose/index.html"}} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
 							<h1 className="font-bold text-3xl">Body Pose</h1>
-							<span className="bg-blue-600 p-1 rounded px-10">Ir</span>
+							<span className="dark-bg p-1 rounded px-10">Ir</span>
 						</button>
 					</div>
 					<div className="flex flex-col justify-center mx-1">
 						<a href="yolo">
 							<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-								<h1 className="font-bold text-3xl">YOLO</h1>
-								<span className="bg-blue-600 p-1 rounded px-10">Ir</span>
+							<h1 className="font-bold text-3xl">YOLO</h1>
+							<span className="dark-bg p-1 rounded px-10">Ir</span>
 							</button>
 						</a>
 					</div>
